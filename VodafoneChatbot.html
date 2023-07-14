@@ -31,6 +31,25 @@
         <!-- Add your widget content here -->
       <iframe src="C:/Users/Tamar/Downloads/VodafoneChatbot.html" width="100%" height="600px"></iframe>
 <iframe src="C:\Users\Tamar\Downloads\VodafoneChatbot.html" width="100%" height="600px"></iframe>
+
+        <div id="output"></div>
     </div>
+    <div id="output"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $.ajax({
+      url: "path/to/your/script.py",
+      type: "GET",
+      dataType: "text",
+      success: function(response) {
+        $("#output").html(response);
+      }
+    });
+  });
+</script>
+
+    
 </body>
 </html>
